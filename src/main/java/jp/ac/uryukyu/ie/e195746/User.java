@@ -2,6 +2,7 @@ package jp.ac.uryukyu.ie.e195746;
 
 import java.util.Scanner;
 
+
 /**
  * ユーザクラス
  * 任意の場所を指定して駒を置く

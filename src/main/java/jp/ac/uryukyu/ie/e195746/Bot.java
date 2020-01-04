@@ -2,6 +2,7 @@ package jp.ac.uryukyu.ie.e195746;
 
 import java.util.Random;
 
+
 /**
  * ボットクラス
  * 無作為に場所を指定して駒を置く
