@@ -91,4 +91,22 @@ public class GameMaster {
     boolean isMatch(int number,int alphabet,String shape){
         return  board.getUnit(number,alphabet).equals(shape);
     }
+
+
+    /**
+     * 引き分けを判断するメソッド
+     * 碁盤の２重リストにunitの初期値("⬜")がみつからなかったらtrueを返す。
+     *
+     * @return 引き分けであればtrueを返す。
+     */
+    boolean isDraw(){
+        for(String[] units: board.getBoard()){
+            for (String unit: units){
+                if(unit.equals("⬜")){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
