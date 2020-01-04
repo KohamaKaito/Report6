@@ -2,6 +2,14 @@ package jp.ac.uryukyu.ie.e195746;
 
 import java.util.Scanner;
 
+/**
+ * ユーザクラス
+ * 任意の場所を指定して駒を置く
+ *
+ *
+ * String unit;  //ユーザの駒の形（ver1.0,"⭕"or"❌"）
+ * Board board;  //プレイする碁盤の情報
+ */
 public class User extends Player {
     User(String unit, Board board) {
         super(unit, board);
