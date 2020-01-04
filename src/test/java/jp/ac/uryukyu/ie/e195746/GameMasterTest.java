@@ -27,7 +27,7 @@ class GameMasterTest {
 
 
         int expect = 1;  //(0,0)には⭕が入ってるので期待値は１
-        
+
         assertEquals(expect,actual);
 
 
