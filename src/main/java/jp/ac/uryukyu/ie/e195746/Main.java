@@ -19,6 +19,10 @@ public class Main {
                 else {
                     System.out.println("そこには置けません。");
                     board.showboard();} }
+            if (gameMaster.isjudge(user.unit)) {
+                System.out.println("(" + user.unit + "):YOU WIN!!");
+                break;
+            }
 
 
             while (true){
@@ -27,6 +31,10 @@ public class Main {
                 if(gameMaster.isSpace(number, alphabet)){
                     bot.play(number, alphabet);
                     break; } }
+            if (gameMaster.isjudge(bot.unit)) {
+                System.out.println("YOU LOSE..");
+                break;
+            }
         }
     }
 }

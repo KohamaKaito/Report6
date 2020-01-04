@@ -15,6 +15,11 @@ public class Board {
     private String unit;
 
 
+    /**
+     * 碁盤クラスのコンストラクタ
+     *
+     * @param unit　碁盤を構成する初期値(ver1.0,"⬜")
+     */
     public Board(String unit){
         this.unit = unit;
         for(int i=0; i<3; i++){
@@ -39,6 +44,10 @@ public class Board {
     }
 
 
+    /**
+     * 碁盤の状態を出力するメソッド
+     * 可視化しやすいようにガイドとして数値やアルファベットを出力
+     */
     void showboard(){
         System.out.println("　A B C");
         for(int i=0; i<3; i++){

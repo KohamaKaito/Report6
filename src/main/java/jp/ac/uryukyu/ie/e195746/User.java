@@ -16,6 +16,12 @@ public class User extends Player {
         super(unit, board);
     }
 
+
+    /**
+     * ユーザ入力を変数に代入するメソッド
+     *
+     * @return 縦座標の数値
+     */
     int getNumber(){
         System.out.println("(" + unit + "):あなたのターンです。");
         System.out.println("(" + unit + "):数字を入力してください。");
@@ -25,6 +31,11 @@ public class User extends Player {
         return number; }
 
 
+    /**
+     * ユーザ入力を変数に代入するメソッド
+     *
+     * @return 横座標の数値
+     */
     int getAlphabet(){
         System.out.println("(" + unit + "):アルファベットを入力してください。");
         Scanner scan_alp = new Scanner(System.in);
@@ -33,6 +44,13 @@ public class User extends Player {
         return alphabet; }
 
 
+    /**
+     * ユーザ入力のアルファベットを数値に変換するメソッド
+     * A→0 B→1 C→2に変換される
+     *
+     * @param alphabet ユーザ入力によるアルファベット(String型)
+     * @return 変換された数値(int型)
+     */
     int trans(String alphabet) {
         switch (alphabet){
             case "A":
