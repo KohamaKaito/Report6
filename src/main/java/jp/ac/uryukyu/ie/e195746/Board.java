@@ -1,6 +1,13 @@
 package jp.ac.uryukyu.ie.e195746;
 
 
+/**
+ * 三目並べを行う碁盤クラス
+ * ３×３の二重配列は９マスの正方形を表す
+ *
+ * String[][] board;  //９マスの碁盤
+ * String unit;       //碁盤を構成する単位（ver1.0,"⬜","⭕","❌"）
+ */
 public class Board {
 
     private String[] board[] = new String[3][3];
