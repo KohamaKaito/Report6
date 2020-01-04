@@ -11,15 +11,26 @@ public class Main {
 
         while (true) {
             while (true) {
-                int number = user.getNumber();
-                int alphabet = user.getAlphabet();
-                if (gameMaster.isSpace(number, alphabet)) {
-                    user.play(number, alphabet);
-                    break;
-                } else {
-                    System.out.println("そこには置けません。");
+                try {
+                    int number = user.getNumber();
+                    int alphabet = user.getAlphabet();
+                    if (gameMaster.isSpace(number, alphabet)) {
+                        user.play(number, alphabet);
+                        break;
+                    } else {
+                        System.out.println("そこには置けません。");
+                        board.showboard();
+                    }
+                }catch (NumberFormatException e) {
+                    System.out.println("例外が発生しました");
+                    System.out.println("正しい文字を入力してください");
                     board.showboard();
-                }
+                    continue;
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    System.out.println("例外が発生しました");
+                    System.out.println("正しい文字を入力してください");
+                    board.showboard();
+                    continue; }
             }
             if (gameMaster.isjudge(user.unit)) {
                 System.out.println("(" + user.unit + "):YOU WIN!!");
