@@ -102,7 +102,7 @@ public class GameMaster {
     boolean isDraw(){
         for(String[] units: board.getBoard()){
             for (String unit: units){
-                if(unit.equals("⬜")){
+                if(unit.equals(board.getUnit())){
                     return false;
                 }
             }

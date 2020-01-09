@@ -34,7 +34,7 @@ public class Player {
      * @param alphabet   碁盤の横座標
      */
     void play(int number, int alphabet){
-        board.setUnit(number,alphabet,unit);
+        board.apdateBoard(number,alphabet,unit);
         board.showboard();
     }
 }

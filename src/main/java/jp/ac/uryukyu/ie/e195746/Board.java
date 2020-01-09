@@ -39,10 +39,6 @@ public class Board {
         return board[number][alphabet];
     }
 
-    public void setUnit(int number, int alphabet, String tipe) {
-        this.board[number][alphabet] = tipe;
-    }
-
 
     /**
      * 碁盤の状態を出力するメソッド
@@ -54,6 +50,19 @@ public class Board {
             System.out.println(i + board[i][0] + board[i][1] + board[i][2]);
         }
         System.out.println("\n");
+    }
+
+
+    /**
+     * 碁盤の情報を更新するメソッド
+     * 空白のマスに⭕か❌をいれる。
+     *
+     * @param number  指定した場所(縦座標)
+     * @param alphabet  指定した場所(横座標)
+     * @param tipe  上書きする形
+     */
+    void apdateBoard(int number, int alphabet, String tipe){
+        this.board[number][alphabet] = tipe;
     }
 
 

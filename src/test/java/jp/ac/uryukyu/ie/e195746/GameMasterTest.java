@@ -13,7 +13,7 @@ class GameMasterTest {
         int actual;
 
         Board board = new Board("⬜");
-        board.setUnit(number,alphabet,"⭕");
+        board.apdateBoard(number,alphabet,"⭕");
         //(0,0)は空白ではく⭕が入ってる
 
         if (board.getUnit(number,alphabet).equals(board.getUnit())) {
