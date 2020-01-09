@@ -11,8 +11,6 @@
  
 # Author
  
-作成情報を列挙する
- 
 * Kaito Kohama
 * e195746@ie.u-ryukyu.ac.jp
  
